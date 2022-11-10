@@ -3,7 +3,7 @@ let px = require('px');
 let fs = require('fs');
 
 
-https.get('	https://pxweb.stat.si/SiStatData/Resources/PX/Databases/Data/0701084S.PX', (res,err,data) => {
+https.get('https://pxweb.stat.si/SiStatData/Resources/PX/Databases/Data/0701084S.PX', (res,err,data) => {
     res.on('data', data => {
         
         peiks = new px(data.toString());
